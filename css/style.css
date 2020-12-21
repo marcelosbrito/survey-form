@@ -1,0 +1,133 @@
+/* All page elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Elements with the ID "title" */
+#title {
+  font-family: sans-serif;
+  color: #380b61;
+  margin-left: 12%;
+}
+
+/* Elements with the ID "description" */
+#description {
+  font-family: sans-serif;
+  color: #380b61;
+  margin-left: 10%;
+}
+
+#check {
+  display: inline-block;
+}
+
+/* Tag <fieldset> elements */
+fieldset {
+  border: 0;
+}
+
+/* Tag <body> elements */
+body {
+  background-color: #f0f8ff;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #59429d;
+  margin-left: 36%;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+/* Tags <body>, <input>, <Select>, <textarea> & <button> elements */
+input,
+select,
+textarea,
+button {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #59429d;
+  border-radius: 5px;
+}
+
+/* Class elements "cluster" pseudo-classes "before" & "after" */
+.cluster:before,
+.cluster:after {
+  display: table;
+}
+
+/* Class elements "cluster" pseudo-classe "after" */
+.cluster:after {
+  clear: both;
+}
+
+/* Class elements "field" */
+.field {
+  margin-bottom: 1em;
+}
+
+/* Class elements "field" tag <label> */
+.field label {
+  margin-bottom: 0.2em;
+  color: #59429d;
+  display: block;
+}
+
+/* Class elements "field", "cluster" tag <fieldset> */
+fieldset.cluster .field {
+  float: left;
+  margin-right: 1em;
+}
+
+/* Class elements "field" tags <input> with attribute text, number & email, tag <select> & tag <textarea>*/
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="number"],
+.field select,
+.field textarea {
+  padding: 0.2em;
+  border: 1px solid #59429d;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* Class elements "field" tag <select> & <option>*/
+.field select option {
+  padding-right: 1em;
+}
+
+/* Class element "field" tag <input>, <select> & <textarea> pseudoclass "focus"*/
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  background: #e0e0f8;
+}
+
+/* Class element "button" */
+.button {
+  font-size: 1.2em;
+  background: #59429d;
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin: 4rem auto;
+  transform: translate(-50%, -50%);
+}
+
+/* Class element "button" pseudoclass "hover" */
+.button:hover {
+  background: #ccbbff;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
+
+/* Class elements "button" tag <select> */
+.button,
+select {
+  cursor: pointer;
+}

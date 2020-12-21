@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+
+        <!-- Page title (appears on the tab) -->
+        <title>Survey Form</title>
+    </head>
+
+    <body>  
+
+        <!-- Header with title and description -->
+        <div>
+            <h1 id="title">DEVs Survey</h1>
+            <p id="description">Complete with your information!</p>
+            <br>
+        </div>
+
+        <!-- Form start here -->
+        <form id="survey-form">
+
+            <fieldset class="cluster">
+                <!-- Name field with caption "name" and class css "field" -->
+                <div class="field">
+                    <label for="name-label" id="name-label"><strong>Name</strong></label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                </div>
+
+                <!-- Last name field with caption "last name" and class css "field" -->
+                <div class="field">
+                    <label for="lastname-label" id="lastname-label"><strong>Last Name</strong></label>
+                    <input type="text" name="sobrename" id="sobrename" placeholder="Enter your Last Name" required>
+                </div>
+            </fieldset> 
+
+            <fieldset class="cluster">
+            <!-- Email field -->
+                <div class="field">
+                    <label for="email-label" id="email-label"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                </div>
+
+                <!-- Age field -->
+                <div class="field">
+                    <label for="number-label" id="number-label"><strong>Age</strong></label>
+                    <input type="number" name="number" id="number" min="0" max="125" required>
+                </div>
+            </fieldset>
+
+            <!-- Web development field with 3 options of selectable buttons (radio button) and class css "field" -->
+            <div class="field">
+                <label><strong>Your Web development Stack</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <!-- Seniority field with 3 options to choose from (select option) and class css "field" -->
+            <div class="field">
+                <label for="dropdown"><strong>Seniority</strong></label>
+                <select id="dropdown" required>
+                  <option id="dropdown" selected disabled value="">Select</option>
+                  <option id="dropdown">Training</option>
+                  <option id="dropdown">Entry-level</option>
+                  <option id="dropdown">Junior</option>
+                  <option id="dropdown">Sênior</option>
+                </select>
+            </div>
+
+            <fieldset class="cluster">
+                <!-- Technologies field for choosing 1 or more options to check (checkbox) and class css "field" -->
+                <div id="check">
+                    <label><strong>Which tecnology you code:</strong></label><br><br>
+                    <input type="checkbox" id="tecnology1" name="tecnology1" value="HTML">
+                    <label for="tecnology1"> HTML</label><br />
+                    <input type="checkbox" id="tecnology2" name="tecnology2" value="CSS">
+                    <label for="tecnology2"> CSS</label><br />
+                    <input type="checkbox" id="tecnology3" name="tecnology3" value="JavaScript">
+                    <label for="tecnology3"> JavaScript</label><br />
+                    <input type="checkbox" id="tecnology4" name="tecnology4" value="React">
+                    <label for="tecnology4"> React</label><br />
+                    <input type="checkbox" id="tecnology5" name="tecnology5" value="Angular">
+                    <label for="tecnology5"> Angular</label><br />
+                    <input type="checkbox" id="tecnology6" name="tecnology6" value="Java">
+                    <label for="tecnology6"> Java</label><br />
+                    <input type="checkbox" id="tecnology7" name="tecnology7" value="Python">
+                    <label for="tecnology7"> Python</label><br />
+                </div>
+            </fieldset>
+
+            <!-- Text box -->
+            <div class="field">
+                <br>
+                <label for="comments"><strong>Any comments or suggestions? </strong></label>
+                <textarea rows="6" style="width: 26em" id="comments" name="comments"></textarea>
+            </div>
+
+            <!-- Button to submit the form -->
+            <button class="button" id="submit" type="submit" onsubmit="">Submit</button>            
+
+        </form>
+
+    </body>
+
+</html>
